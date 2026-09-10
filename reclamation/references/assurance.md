@@ -10,12 +10,20 @@ Tiré d'un dossier réel contre un assureur pour animaux (voir `cas/assurance-ch
 4. **L'ACPR** (Autorité de contrôle prudentiel et de résolution) si l'assureur ne traite pas la réclamation dans les délais : elle ne tranche pas le litige, elle contrôle le dispositif de traitement des réclamations. C'est le levier qui fait bouger un service réclamations muet. À annoncer dans le courrier de relance, à exécuter si le délai passe.
 5. **Le juge**, rarement rentable pour un petit montant. À réserver au cas où l'exclusion coûte un jour une vraie facture.
 
+## Les pièces à récupérer avant tout
+
+Sur l'espace client de l'assureur, dès l'assessment : la police (ce qui a été souscrit, avec ou sans réserve), les conditions générales de la version en vigueur à la souscription, la fiche d'information produit, et les courriers du service sinistres. Sur un dossier réel, ces pièces ont dormi quatre mois sur l'espace client pendant que le dossier se menait sans elles. Elles contenaient l'argument : la police n'avait jamais comporté de réserve, et les conditions générales reproduisaient mot pour mot l'article L.113-9.
+
+Le questionnaire de santé ou de déclaration du risque rempli à la souscription n'est souvent pas conservé côté assuré. S'il est introuvable, on ne le reconstitue pas de mémoire : on demande au médiateur de l'exiger de l'assureur, avec horodatage.
+
 ## Les pièges
 
 - **Réponse du mauvais service.** Un courrier du service sinistres n'est pas une réponse à une réclamation adressée au service réclamations. Le délai de 2 mois continue de courir. Note-le par écrit à l'assureur.
 - **Saisine prématurée.** 21 jours entre la réclamation et la saisine, ce n'est pas 2 mois. Si c'est déjà fait, régularise dès qu'une des conditions est remplie (délai échu, ou réponse écrite insatisfaisante), et présente la transmission des pièces comme une régularisation à la date du jour.
 - **Le numéro de demande n'est pas un numéro de dossier.** Le médiateur donne d'abord un récépissé (format DEM-xxx) : ce n'est pas l'ouverture du dossier. Le dossier n'existe que quand un identifiant définitif est attribué (format ABR, PRE ou VIE pour la Médiation de l'Assurance). Sans lui, rien n'est instruit et la prescription n'est pas suspendue. Relance à 21 jours.
 - **La pièce qui manque.** Le médiateur exige la copie de la réclamation écrite au professionnel, avec sa date et son destinataire, et la réponse si elle existe. Joins la réclamation elle-même, pas seulement l'accusé de réception.
+- **La régularisation qui devient une nouvelle saisine.** Un envoi de pièces après une première demande irrecevable peut être enregistré comme une nouvelle saisine, avec une nouvelle référence. Citer désormais la dernière, rattacher les anciennes en une ligne.
+- **Un seul tour.** Une fois recevable, la position du médiateur clôt la procédure. Le mémoire part complet, avec les demandes subsidiaires. Voir [process-mediateur.md](process-mediateur.md).
 - **Les mails du médiateur et de La Poste** tombent dans les dossiers secondaires des clients mail. Va les chercher.
 
 ## L'argument qui gagne sur une exclusion
@@ -39,7 +47,7 @@ Rarement la levée totale. Viser le compromis : exclusion restreinte (à la path
 |---|---|---|---|
 | Réponse à la réclamation | 2 mois | Assureur | Saisine médiateur, signalement ACPR |
 | Recevabilité | 21 jours | Médiateur | Relance écrite, recommandé |
-| Avis du médiateur | 90 jours à compter de la recevabilité | Médiateur | Relance, puis CECMC (commission qui contrôle les médiateurs) |
+| Avis du médiateur | 90 jours selon la Charte, 7,5 mois en moyenne réelle | Médiateur | Message à 9 mois, puis CECMC (commission qui contrôle les médiateurs) |
 | Prescription de l'action | 2 ans (art. L.114-1) | Vous | Avocat si proche |
 
 ## Contacts utiles

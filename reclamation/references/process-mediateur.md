@@ -45,13 +45,33 @@ Archive le récépissé (email ou capture) dans le dossier, note le numéro dans
 
 **Les emails tombent dans les dossiers secondaires** du client mail. Va les chercher, à chaque échéance.
 
+## Une fois recevable : le mémoire, en un seul tour
+
+La notification de recevabilité change tout : le médiateur demande les pièces contractuelles (police, conditions générales, questionnaire de souscription, correspondances), donne les codes de l'espace réclamant, et précise que sa position clôt la procédure. Il n'y a pas d'aller-retour : tout ce qui doit être lu part dans le même envoi.
+
+Avant d'écrire une ligne, récupérer les pièces contractuelles sur l'espace client du professionnel (elles n'y sont presque jamais dans le dossier de l'utilisateur). Lire la police en entier : elle dit ce qui a été souscrit, et souvent ce qui n'y figure pas (une réserve qui n'apparaît que dans un courrier n'est pas dans le contrat). Lire les conditions générales : elles reproduisent souvent la loi mot pour mot, et deviennent la meilleure pièce contre leur auteur.
+
+Le mémoire (voir `templates/saisine-mediateur.md` pour l'exposé court ; le mémoire est sa version longue) :
+
+1. Les parties, les références, la chronologie datée.
+2. Les faits, pièce par pièce, numérotées (P01, P02...), chaque affirmation renvoyant à sa pièce.
+3. Les observations juridiques, en non-juriste, avec les citations exactes des conditions générales et du courrier de l'adversaire.
+4. La demande principale, puis les demandes subsidiaires, dans le même document. Un médiateur qui ne peut pas accorder le principal doit avoir une position de repli à proposer, sinon il ne propose rien.
+5. La pièce que l'adversaire est seul à détenir (le questionnaire de souscription, l'expertise interne) : demander au médiateur de l'exiger, avec horodatage, plutôt que de faire comme si elle n'existait pas.
+
+Sur l'espace réclamant, les documents se déposent par zone (médical ou non médical, selon les médiateurs) : seules les pièces d'une zone sont transmises à l'autre partie. Choisir en connaissance de cause. Puis vérifier dans « Documents transmis » que chaque fichier apparaît avec son horodatage. Une pièce complémentaire pendant l'instruction reste possible, déposée seule avec un commentaire de deux lignes qui la rattache au point du mémoire concerné. Pas de second mémoire.
+
+Le dépôt lui-même (identifiants, téléversement) est fait par l'utilisateur. L'agent assemble le dossier, numérote et nomme les fichiers comme dans le mémoire, et rédige le commentaire de dépôt.
+
 ## Les délais
 
 | Étape | Délai | Levier |
 |---|---|---|
 | Recevabilité | 21 jours | Relance triple canal |
-| Avis | 90 jours à compter de la recevabilité | Relance à l'adresse de traitement, puis CECMC (commission qui contrôle les médiateurs de la consommation) |
-| Après l'avis | Les deux parties sont libres de l'accepter ou non ; l'assureur le suit presque toujours | Juge si refus |
+| Avis | 90 jours à compter de la recevabilité selon la Charte ; 7,5 mois en moyenne réelle annoncée par la Médiation de l'Assurance en 2026 | Message via l'espace réclamant à 9 mois si silence, puis CECMC (commission qui contrôle les médiateurs de la consommation) |
+| Après l'avis | Chaque partie a un mois pour accepter ou refuser ; le silence de l'assureur vaut acceptation (Charte) | Juge si refus |
+
+Le vrai délai se dit à l'assessment. Une médiation est un engagement de six mois à un an, pas de trois mois.
 
 ## Mode de gestion : passif
 

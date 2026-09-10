@@ -1,6 +1,6 @@
 # Cas 1 : l'assureur qui exclut l'estomac d'un chiot à vie
 
-Dossier réel, mené entre mai et septembre 2026 avec Claude (Cowork, Claude in Chrome). Anonymisé : « l'assureur » est un assureur santé animale, les noms de personnes et les références sont retirés. En cours au moment de la publication : médiation ouverte, avis attendu.
+Dossier réel, mené depuis mai 2026 avec Claude (Cowork, Claude in Chrome, navigateur intégré). Anonymisé : « l'assureur » est un assureur santé animale, les noms de personnes et les références sont retirés. En cours au moment de la publication : saisine recevable le 9 septembre, dossier complet déposé le 10, proposition du médiateur attendue au printemps 2027.
 
 ## Le problème
 
@@ -30,7 +30,16 @@ Le problème n'est pas 200 €. Un Golden est une race exposée au syndrome de d
 
 **31 août.** L'assureur répond enfin, point par point, maintien intégral. Mais il écrit : « Nous ne remettons pas en cause votre bonne foi. » Bonne foi reconnue, c'est l'article L.113-9, pas L.113-8. Et L.113-9 ne prévoit que trois issues (surprime acceptée, résiliation, réduction proportionnelle). Une exclusion unilatérale à vie en cours de contrat n'en fait pas partie. C'est l'assureur qui a fourni l'argument.
 
-**3 septembre.** Email au médiateur avec la réclamation oubliée, la réponse de l'assureur, et l'observation sur L.113-9, présentée comme telle par un non-juriste. Réponse courte à l'assureur : prise d'acte, transmission au médiateur. Mode passif.
+**3 septembre.** Email au médiateur avec la réclamation oubliée, la réponse de l'assureur, et l'observation sur L.113-9, présentée comme telle par un non-juriste. Réponse courte à l'assureur : prise d'acte, transmission au médiateur.
+
+**9 septembre. Saisine recevable.** Courrier du médiateur : recevabilité au titre de l'art. R.612-2 du Code de la consommation, prescription suspendue, codes de l'espace réclamant reçus le même jour. Surprise : l'envoi du 3 septembre a été enregistré comme une nouvelle saisine, avec une nouvelle référence. Il faut désormais citer celle-là, et rattacher les anciennes en une ligne. Le médiateur demande les pièces contractuelles (police, conditions générales, questionnaire de souscription, correspondances) et précise que sa position clôt la procédure : un seul tour, tout doit partir dans le même envoi. Délai annoncé : 90 jours en théorie, 7,5 mois en moyenne réelle.
+
+**10 septembre, matin. Le dossier reconstitué.** Aucune pièce contractuelle n'était dans le dossier : elles dormaient sur l'espace client de l'assureur. Récupérées dans la matinée (police, conditions générales, fiche produit), et trois découvertes :
+- La police n'a jamais comporté de réserve, aucun avenant. La réserve n'existe que dans un courrier du service sinistres, rendu dans un dossier qui concernait les vaccins.
+- Les conditions générales reproduisent mot pour mot l'article L.113-9 (surprime acceptée, résiliation à 10 jours, ou réduction proportionnelle) : l'assureur a lui-même écrit que l'exclusion unilatérale n'est pas une option.
+- Le questionnaire de santé de la souscription n'existe nulle part côté assuré : ni sur l'espace client, ni en pièce jointe, ni dans les emails. Le mémoire demande au médiateur de l'exiger de l'assureur, avec horodatage.
+
+**10 septembre, 11h02. Dossier déposé** sur l'espace réclamant par l'utilisateur : un mémoire de 19 pièces numérotées, demande principale (levée de la réserve et remboursement) et demandes subsidiaires dans le même document (réserve restreinte aux suites de l'épisode de janvier, ou temporaire 12 mois, ou surprime), puisqu'il n'y a qu'un tour. Vérifié dans « Documents transmis » : les 23 fichiers apparaissent, avec l'horodatage. La leçon du 6 août, appliquée. Une attestation vétérinaire complémentaire suivra en pièce isolée. Puis mode passif long.
 
 ## Ce qui a marché
 
@@ -39,6 +48,9 @@ Le problème n'est pas 200 €. Un Golden est une race exposée au syndrome de d
 - Le journal des envois et preuves : chaque envoi, son canal, son heure, sa preuve, son verbatim.
 - Retourner les mots de l'adversaire : « bonne foi » est devenu le pivot juridique.
 - Le cadrage de l'enjeu réel, écrit noir sur blanc, relu le jour où l'utilisateur voulait abandonner.
+- Aller chercher les pièces contractuelles sur l'espace client avant d'écrire le mémoire. Les conditions générales contenaient l'argument, et la police prouvait l'absence de réserve.
+- Un mémoire avec principal et subsidiaires dans le même envoi, parce que le médiateur ne fait qu'un tour. Un dossier « tout ou rien » aurait laissé le médiateur sans position de repli.
+- Demander au médiateur d'exiger de l'adversaire la pièce qu'il est seul à détenir (le questionnaire), plutôt que de faire comme si elle n'existait pas.
 
 ## Ce qui a foiré
 
@@ -46,7 +58,9 @@ Le problème n'est pas 200 €. Un Golden est une race exposée au syndrome de d
 - Pièce jointe manquante le 6 août, vue quatre semaines plus tard. D'où la règle : après tout envoi à pièces, vérifier la liste des pièces réellement parties.
 - Les emails du médiateur et de La Poste tombaient dans un dossier secondaire du client mail.
 - Pas d'assessment au départ. L'utilisateur est entré dans le dossier sans savoir ce qu'il pouvait gagner ni ce que ça lui coûterait. Il l'a dit après coup : c'est la mécanique qui lui a manqué.
+- Quatre mois sans avoir lu la police ni les conditions générales. Elles étaient à trois clics sur l'espace client. Le skill les demande maintenant à l'assessment.
+- Le vrai délai d'une médiation n'est pas celui de la Charte. 90 jours annoncés, 7,5 mois en moyenne. À dire dans l'assessment, pour que l'utilisateur sache dans quoi il s'engage.
 
 ## Ce que ça a changé dans le skill
 
-La section 0 du SKILL.md (assessment obligatoire), la référence `assurance.md` (le parcours, les pièges de recevabilité, l'argument de la bonne foi), la référence `process-mediateur.md` (DEM contre ABR, le triple canal), et la règle de vérification des pièces jointes.
+La section 0 du SKILL.md (assessment obligatoire), la référence `assurance.md` (le parcours, les pièges de recevabilité, l'argument de la bonne foi, les pièces contractuelles à récupérer d'abord), la référence `process-mediateur.md` (DEM contre ABR, le triple canal, le mémoire à un seul tour, le vrai délai), et la règle de vérification des pièces jointes.
