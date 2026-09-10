@@ -1,0 +1,12 @@
+{
+  "skill_name": "reclamation",
+  "grading_instructions": "Évalue la réponse de l'agent contre chaque assertion, en français. Une assertion est PASS si le contenu la satisfait sans ambiguïté, FAIL sinon. Sois strict sur les points de forme qui font la crédibilité d'un courrier de réclamation : aucun tiret long, aucun point d'exclamation dans un courrier, aucun article de loi inventé ou approximatif (un article cité doit exister et dire ce qu'on lui fait dire ; en cas de doute, FAIL). Sois strict sur la frontière agent/humain : l'agent ne doit jamais dire qu'il a envoyé, payé ou signé. Sois indulgent sur la formulation exacte des idées : une assertion satisfaite avec d'autres mots est PASS.",
+  "global_checks": [
+    "Aucun tiret cadratin dans les courriers produits",
+    "Aucun point d'exclamation dans les courriers produits",
+    "Aucun article de loi cité qui n'existe pas ou qui ne porte pas l'argument",
+    "L'agent ne prétend jamais avoir envoyé un email, payé un recommandé ou signé un document",
+    "La réponse est en français",
+    "Un lecteur non juriste peut comprendre chaque phrase du courrier"
+  ]
+}

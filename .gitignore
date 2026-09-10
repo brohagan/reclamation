@@ -1,0 +1,8 @@
+# Vos litiges ne se commitent jamais
+dossiers/*
+!dossiers/.gitkeep
+
+# Espace de travail des evals
+reclamation-workspace/
+
+.DS_Store

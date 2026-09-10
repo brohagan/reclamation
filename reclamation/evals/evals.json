@@ -1,0 +1,89 @@
+{
+  "skill_name": "reclamation",
+  "evals": [
+    {
+      "id": 1,
+      "name": "assessment-assurance-exclusion",
+      "prompt": "Mon assureur santé animale a posé une exclusion à vie sur toutes les maladies gastro-intestinales de mon chiot Golden de 8 mois, parce qu'il a eu des selles molles une semaine avant que je souscrive (test parasitaire négatif, aucun traitement). Ils viennent de refuser une facture de 200 € sans lien avec ça. Est-ce que ça vaut le coup de contester ? J'ai le contrat et les courriers.",
+      "expected_output": "Le skill lance un assessment structuré avant tout courrier. Il reformule le vrai problème (l'exclusion à vie sur une race exposée aux urgences digestives, pas les 200 €), chiffre le downside long terme, distingue le meilleur cas du cas réaliste (exclusion restreinte ou temporaire), liste les alternatives (changer d'assureur, en expliquant pourquoi ça ne résout rien), décrit le parcours (réclamation écrite, 2 mois, médiateur), propose un curseur, et rend un verdict que l'utilisateur doit valider. Il ne rédige pas encore la réclamation.",
+      "files": [],
+      "assertions": [
+        "La réponse reformule le problème réel comme l'exclusion à vie et ses conséquences futures, pas comme la facture de 200 €",
+        "La réponse distingue explicitement un résultat au mieux et un résultat réaliste",
+        "La réponse mentionne au moins une alternative au combat (changer d'assureur, résilier) et dit si elle résout le problème",
+        "La réponse décrit le parcours réclamation écrite puis 2 mois puis médiateur, sans proposer de saisir le médiateur immédiatement",
+        "La réponse propose un curseur d'agressivité et laisse le choix à l'utilisateur",
+        "La réponse se termine par un verdict clair (on y va / on n'y va pas) et un premier mouvement daté",
+        "La réponse ne rédige pas de courrier complet à ce stade",
+        "Aucun article de loi n'est cité sans être identifié comme à vérifier ou vérifié"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "mise-en-demeure-location-b2b",
+      "prompt": "Ma société loue un vélo électrique en LLD (36 mois, 125 € HT/mois). Il est en panne depuis 3 semaines, c'est la 4e panne, le loueur me renvoie vers son fournisseur et a reconnu par email que le vélo est « actuellement inutilisable ». Ils ont suspendu les prélèvements mais rien ne bouge. J'ai versé 494,90 € au total. Rédige la mise en demeure, je veux sortir du contrat ou qu'ils remplacent le vélo.",
+      "expected_output": "Le skill vérifie d'abord l'existence d'un dossier ou en crée un, rappelle que le contrat est B2B (pas de Code de la consommation), demande ou signale de lire les clauses de résiliation, puis produit une mise en demeure complète : faits datés, l'aveu « actuellement inutilisable » entre guillemets, fondements entre parenthèses (1719/1721, 1199 pour le fournisseur non opposable), deux options (remplacement sous 15 jours ou résolution amiable avec remboursement), 8 jours à réception, cran suivant nommé (résolution art. 1226 puis Médiateur des entreprises et injonction de payer). Il précise le double canal (recommandé + email intégral à plusieurs personnes) et la frontière : l'utilisateur paie et envoie.",
+      "files": [],
+      "assertions": [
+        "La réponse signale que le Code de la consommation ne s'applique pas entre professionnels",
+        "La réponse demande ou recommande de lire les clauses de résiliation du contrat avant toute résolution",
+        "La mise en demeure propose exactement deux options à l'adversaire",
+        "La mise en demeure fixe un délai de huit jours à compter de la réception",
+        "La mise en demeure cite l'aveu écrit « actuellement inutilisable » entre guillemets",
+        "La mise en demeure indique que le fournisseur du loueur n'est pas opposable au locataire",
+        "La réponse recommande l'envoi en recommandé avec avis de réception doublé d'un email intégral",
+        "La réponse précise que l'utilisateur paie le recommandé et envoie lui-même l'email",
+        "Le courrier ne contient aucun point d'exclamation ni tiret long",
+        "Le cran suivant (résolution art. 1226 ou équivalent) est annoncé en une phrase dans le courrier"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "escalade-bailleur-deadline-ignoree",
+      "prompt": "Mon agence de gestion locative m'a interdit l'accès à mon balcon de 27 m² depuis 5 semaines parce que les garde-corps en verre bougent. Ils ont envoyé deux menuisiers qui ont dit que ce n'était pas leur métier. J'ai fixé une deadline lundi 12h pour avoir le nom d'une entreprise qualifiée et une date, elle est passée, aucune réponse. Qu'est-ce qu'on fait maintenant ?",
+      "expected_output": "Le skill exécute le cran annoncé au lieu de relancer : mise en demeure au bailleur (copie agence) en recommandé, et signalement à la mairie au titre de l'art. L.511-1 du CCH le même jour. Il recentre la demande sur le diagnostic par un professionnel qualifié nommé (bureau de contrôle ou miroitier/métallier) plutôt que sur la réparation, explique que l'assurance dommages-ouvrage ne fait pas de diagnostic, rappelle que le loyer se paie plein et que la créance se notifie, propose de contacter directement les propriétaires, et sépare ce que fait l'agent (rédiger, préparer le dépôt) de ce que fait l'utilisateur (payer, envoyer).",
+      "files": [],
+      "assertions": [
+        "La réponse ne propose pas une simple relance mais l'exécution du cran suivant (mise en demeure et/ou signalement mairie)",
+        "La réponse mentionne le signalement à la mairie au titre des pouvoirs de police du maire (L.511-1 CCH ou équivalent)",
+        "La réponse recentre la demande sur un diagnostic par un professionnel qualifié nommé, pas sur la réparation",
+        "La réponse nomme au moins un corps de métier ou bureau de contrôle compétent pour du verre (miroitier, métallier, bureau de contrôle)",
+        "La réponse rappelle que le loyer doit être payé en totalité et que la privation se notifie sans être déduite",
+        "La réponse propose de contacter directement les propriétaires (le bailleur), pas seulement l'agence",
+        "La réponse distingue explicitement ce que l'agent prépare et ce que l'utilisateur fait lui-même (payer, envoyer)",
+        "La réponse affiche les échéances en tête (deadline échue signalée)"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "mediateur-muet",
+      "prompt": "J'ai saisi la Médiation de l'Assurance il y a 6 semaines, j'ai un récépissé avec un numéro DEM-xxxxxx-2026 et depuis, rien. Pas de mail, pas de courrier, je n'arrive pas à me connecter à l'espace réclamant. Ma réclamation à l'assureur date d'il y a 9 semaines, ils n'ont jamais répondu. Qu'est-ce que je fais ?",
+      "expected_output": "Le skill explique que le numéro DEM est un numéro de demande, pas de dossier, et que sans identifiant définitif (ABR/PRE/VIE) le dossier n'est pas ouvert ni la prescription suspendue. Il vérifie la recevabilité (réclamation de plus de 2 mois : oui, désormais), propose la relance triple canal le même jour (formulaire de contact, email à l'adresse de traitement, recommandé au siège avec le récépissé), signale de vérifier les dossiers secondaires de la boîte mail, et propose en parallèle un mail à l'assureur actant l'expiration du délai de 2 mois avec l'ACPR comme cran suivant.",
+      "files": [],
+      "assertions": [
+        "La réponse explique que le numéro DEM n'est pas un identifiant de dossier et que le dossier n'est probablement pas ouvert",
+        "La réponse mentionne que la prescription n'est suspendue qu'à compter de la notification de recevabilité",
+        "La réponse confirme que la condition des 2 mois de réclamation est désormais remplie",
+        "La réponse propose au moins deux canaux de relance du médiateur le même jour (formulaire, email, recommandé)",
+        "La réponse recommande de vérifier les dossiers secondaires ou spam de la boîte mail",
+        "La réponse propose un courrier à l'assureur actant l'absence de réponse, avec un cran suivant nommé (ACPR)",
+        "La réponse ne recommande pas de retirer la saisine ni de résilier le contrat"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "assessment-verdict-negatif",
+      "prompt": "Un artisan de mon quartier m'a fait un devis de 180 € pour réparer ma porte de garage, il a fait le travail mais la porte grince toujours un peu. Je l'ai payé. Je veux lui envoyer une mise en demeure pour qu'il rembourse.",
+      "expected_output": "Le skill lance l'assessment et rend un verdict qui déconseille la mise en demeure : enjeu faible, préjudice mineur, adversaire de proximité qu'on reverra, coût en énergie disproportionné. Il propose l'alternative (un message simple et cordial demandant un passage de réglage, curseur doux), sans culpabiliser, et garde la porte ouverte si le grincement cache un vrai défaut. Il ne rédige pas de mise en demeure.",
+      "files": [],
+      "assertions": [
+        "La réponse produit un assessment avant toute rédaction",
+        "La réponse déconseille explicitement la mise en demeure dans ce cas",
+        "La réponse justifie par le rapport entre l'enjeu et l'énergie ou par la relation de proximité",
+        "La réponse propose une alternative concrète au curseur doux (message cordial demandant un réglage)",
+        "La réponse ne rédige pas de mise en demeure",
+        "La réponse ne culpabilise pas l'utilisateur et laisse la décision finale à l'utilisateur"
+      ]
+    }
+  ]
+}
