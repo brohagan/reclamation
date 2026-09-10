@@ -6,3 +6,6 @@ dossiers/*
 reclamation-workspace/
 
 .DS_Store
+
+# Résidus techniques à supprimer
+_to_delete/
